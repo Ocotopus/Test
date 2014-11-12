@@ -1,0 +1,45 @@
+Components:
+1. Windows driver 
+2. Mac driver
+3. Read & write hooking of file and network traffic for iOS
+4. Cross platform agent
+5. Cloud controller
+
+
+1. Create a Word document on PC-1.  In the document write “Hello World” and save it with name MyDocument.docx. Show that you can open and save the document just like any other document.
+
+2. From PC-1, log into Outlook as user_1@testdomain.com, compose an email to email to user_2@testdomain.com and attach MyDocument.docx. 
+
+3. From PC-2, log into Outlook as user_2@testdomain.com and open the email from user_1@testdomain.com with the attach file MyDocument.docx.  Double-click on the attachment and show that you can open the document as normal with Word.
+
+4. From the PC-2, forward the received email with attachment MyDocument.docx to outsider@gmail.com.
+
+5. From the iOS-1, log into gmail as outsider@gmail.com and then open the attachment as normal, the attachment opens in the embedded gmail viewer is likely a stream not a file.
+
+6. Go to the web portal, select MyDocument.docx and revoke access to the file.
+
+7. From the PC-2, show that you can no longer open the file.  Ideally, I would like to show an application dependent head so the user sees a message that still opens in Word.
+
+8. From iOS-1 show within gmail that you can no longer open the file. Ideally, I would like to show an application dependent head so the user sees a message that still opens in the embedded gmail viewer.
+
+9. From the web portal, re-enable access to MyDocument.docx and open it up on the PC-1.  Update the document on the PC-1 to contain “It is a new world.” 
+
+10. On the PC-2, open the same email and double-click on the attachment and show the updates to MyDocument.docx.
+
+11. From iOS-1, open the attachment from within gmail and show the updates to MyDocument.docx.
+
+12. From the PC-1, compose an email to user_3@testdomain.com and attach MyDocument.docx. 
+
+13. From the iOS-2, set native iOS email app to use user_3@testdomain.com and download new email from user_1@testdomain.com.  Long press and open the attachment with Office Mobile to show the document says “It is a new world.”
+
+14. Edit the the attachment MyDocument.docx to say “It is a brave new world” and save the file, it will force you to save it in OneDrive.  Make a verbal remark that the file saved to OneDrive *should not* have the same text then the version attach to the email.
+
+15. On iOS-2, go back to the native iOS email and long click on the same attachment and open the attachment with Office Mobile and show the attachment now says “It is a brave new world.”  Make a remark, it is magic!
+
+16. From a Mac open OneDrive and sync (download) MyDocument.docx.  Open MyDocument.docx and show it says “It is a brave new world.”
+
+17. From the web portal, revoke access to MyDocument.docx and show that the Mac can not open the file.
+
+18. From iOS-2, from the native email app long press and select Office Mobile and show you can no longer open the file. 
+
+19. From iOS-2, go directly to OneDrive and again try to open the MyDocument.docx with Office Mobile and show you can no longer open the document. 
